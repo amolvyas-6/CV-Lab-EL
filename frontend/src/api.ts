@@ -1,36 +1,65 @@
-import axios from 'axios'
-
 import type {
+  ExtractResponse,
   ExtractionPayload,
-  ExtractionResponse,
-  JobStatusResponse,
+  HealthResponse,
+  JobsResponse,
+  MetadataResponse,
+  SummaryResponse,
+  BackendJobRecord,
 } from './types'
 
-export const API_BASE_URL =
-  (import.meta.env.VITE_API_BASE_URL as string | undefined) ??
-  'http://127.0.0.1:8000'
+const API_BASE = '/api'
 
-const client = axios.create({
-  baseURL: API_BASE_URL,
-  timeout: 30000,
-  headers: {
-    'Content-Type': 'application/json',
-  },
-})
+async function requestJson<T>(path: string, init?: RequestInit): Promise<T> {
+  const response = await fetch(`${API_BASE}${path}`, {
+    headers: {
+      'Content-Type': 'application/json',
+      ...(init?.headers ?? {}),
+    },
+    ...init,
+  })
 
-export async function createExtractionJob(
-  payload: ExtractionPayload,
-): Promise<ExtractionResponse> {
-  const { data } = await client.post<ExtractionResponse>('/extract', payload)
-  return data
+  if (!response.ok) {
+    let errorMessage = `Request failed with status ${response.status}`
+
+    try {
+      const payload = (await response.json()) as { detail?: string }
+      if (payload.detail) {
+        errorMessage = payload.detail
+      }
+    } catch {
+      // Ignore parse errors and keep default status-based message.
+    }
+
+    throw new Error(errorMessage)
+  }
+
+  return (await response.json()) as T
 }
 
-export async function fetchJobStatus(jobId: string): Promise<JobStatusResponse> {
-  const { data } = await client.get<JobStatusResponse>(`/status/${jobId}`)
-  return data
+export function fetchHealth(): Promise<HealthResponse> {
+  return requestJson<HealthResponse>('/health')
 }
 
-export async function fetchHealth(): Promise<{ status: string }> {
-  const { data } = await client.get<{ status: string }>('/health')
-  return data
+export function startExtraction(payload: ExtractionPayload): Promise<ExtractResponse> {
+  return requestJson<ExtractResponse>('/extract', {
+    method: 'POST',
+    body: JSON.stringify(payload),
+  })
+}
+
+export function getJobStatus(jobId: string): Promise<BackendJobRecord> {
+  return requestJson<BackendJobRecord>(`/status/${jobId}`)
+}
+
+export function listJobs(): Promise<JobsResponse> {
+  return requestJson<JobsResponse>('/jobs')
+}
+
+export function fetchMetadata(): Promise<MetadataResponse> {
+  return requestJson<MetadataResponse>('/metadata')
+}
+
+export function fetchSummary(): Promise<SummaryResponse> {
+  return requestJson<SummaryResponse>('/summary')
 }

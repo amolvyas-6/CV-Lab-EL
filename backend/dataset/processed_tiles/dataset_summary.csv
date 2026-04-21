@@ -1,0 +1,2 @@
+name,date,tile_count,tile_count_sr,min_lon,min_lat,max_lon,max_lat,tile_dir,sr_tile_dir
+mumbai,2024-02-15,41,41,70.8,16.87,70.97,16.98,dataset/processed_tiles/mumbai_2024,dataset/processed_tiles/mumbai_2024_sr

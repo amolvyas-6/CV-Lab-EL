@@ -1,13 +1,10 @@
-export type BBox = [number, number, number, number]
-
-export interface ExtractionPayload {
-  bbox: BBox
+export type ExtractionPayload = {
+  bbox: [number, number, number, number]
   date: string
   location_name: string
   project_id?: string
   run_fetch?: boolean
   fetch_only?: boolean
-  skip_visualize?: boolean
   scene_path?: string
   masked_path?: string
   tile_dir?: string
@@ -22,55 +19,36 @@ export interface ExtractionPayload {
   blur_threshold?: number
 }
 
-export interface ExtractionResponse {
+export type ExtractResponse = {
   job_id: string
   status: string
 }
 
-export interface Phase2Summary {
-  water_coverage_pct: number
-}
-
-export interface Phase3Summary {
-  total_windows: number
-  tiles_saved: number
-  tiles_rejected: number
-  write_failures: number
-}
-
-export interface Phase4Summary {
-  tiles_found: number
-  tiles_upscaled: number
-  skipped_unreadable: number
-  failed_sr: number
-  failed_write: number
-  skipped?: boolean
-  reason?: string
-}
-
-export interface Phase6Summary {
-  metadata_path: string
-  summary_csv_path: string
-  total_tiles: number
-  total_tiles_sr: number
-  locations_count: number
-}
-
-export interface PipelineRunResult {
-  phase1?: { task_id?: string; skipped?: boolean; reason?: string }
-  phase2?: Phase2Summary
-  phase3?: Phase3Summary
-  phase4?: Phase4Summary
-  phase6?: Phase6Summary
-}
-
-export interface JobStatusResponse {
+export type HealthResponse = {
   status: string
+}
+
+export type BackendJobRecord = {
+  status?: string
   created_at?: string
   started_at?: string
   finished_at?: string
   location?: string
   date?: string
   error?: string
-  result?: PipelineRunResult
+  result?: Record<string, unknown>
+}
+
+export type JobsResponse = Record<string, BackendJobRecord>
+
+export type MetadataResponse = {
+  path: string
+  content: Record<string, unknown>
+}
+
+export type SummaryRow = Record<string, string>
+
+export type SummaryResponse = {
+  path: string
+  content: SummaryRow[]
 }
