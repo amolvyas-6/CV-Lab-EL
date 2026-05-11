@@ -17,11 +17,45 @@ export type ExtractionPayload = {
   stride?: number
   black_threshold?: number
   blur_threshold?: number
+  download_scene?: boolean
+  annotate_ships?: boolean
+  ship_min_area_px?: number
+  ship_max_area_px?: number
+  ship_min_intensity?: number
+  ship_threshold_percentile?: number
+}
+
+export type BatchLocation = {
+  name: string
+  bbox: [number, number, number, number]
+}
+
+export type BatchExtractionPayload = {
+  locations: BatchLocation[]
+  dates: string[]
+  project_id?: string
+  run_fetch?: boolean
+  fetch_only?: boolean
+  download_scene?: boolean
+  drive_folder?: string
+  cloud_filter_pct?: number
+  ndwi_threshold?: number
+  tile_size?: number
+  stride?: number
+  black_threshold?: number
+  blur_threshold?: number
+  sr_model_path?: string
+  annotate_ships?: boolean
+  ship_min_area_px?: number
+  ship_max_area_px?: number
+  ship_min_intensity?: number
+  ship_threshold_percentile?: number
 }
 
 export type ExtractResponse = {
   job_id: string
   status: string
+  total?: number
 }
 
 export type HealthResponse = {

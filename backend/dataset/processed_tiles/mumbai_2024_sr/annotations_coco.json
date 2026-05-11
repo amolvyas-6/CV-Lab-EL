@@ -1,0 +1,846 @@
+{
+  "info": {
+    "description": "Ship candidate pseudo-labels generated from Sentinel-2 water tiles",
+    "annotation_source": "heuristic_bright_object_pseudo_label",
+    "warning": "Pseudo-labels require human verification before scientific model training."
+  },
+  "licenses": [],
+  "categories": [
+    {
+      "id": 1,
+      "name": "ship",
+      "supercategory": "vessel"
+    }
+  ],
+  "images": [
+    {
+      "id": 1,
+      "file_name": "tile_00000.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.79991978268808,
+        18.95705760924585,
+        72.82291665396154,
+        18.98005448051931
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 2,
+      "file_name": "tile_00001.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.81824541448411,
+        18.95705760924585,
+        72.84124228575757,
+        18.98005448051931
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 3,
+      "file_name": "tile_00002.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.83657104628016,
+        18.95705760924585,
+        72.85956791755362,
+        18.98005448051931
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 4,
+      "file_name": "tile_00003.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.85489667807619,
+        18.95705760924585,
+        72.87789354934965,
+        18.98005448051931
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 5,
+      "file_name": "tile_00004.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.87322230987223,
+        18.95705760924585,
+        72.8962191811457,
+        18.98005448051931
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 6,
+      "file_name": "tile_00005.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.89154794166826,
+        18.95705760924585,
+        72.91454481294173,
+        18.98005448051931
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 7,
+      "file_name": "tile_00006.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.90987357346431,
+        18.95705760924585,
+        72.93287044473777,
+        18.98005448051931
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 8,
+      "file_name": "tile_00007.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.92819920526034,
+        18.95705760924585,
+        72.9511960765338,
+        18.98005448051931
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 9,
+      "file_name": "tile_00008.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.94652483705639,
+        18.95705760924585,
+        72.96952170832985,
+        18.98005448051931
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 10,
+      "file_name": "tile_00009.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.79991978268808,
+        18.938731977449812,
+        72.82291665396154,
+        18.961728848723272
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 11,
+      "file_name": "tile_00010.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.81824541448411,
+        18.938731977449812,
+        72.84124228575757,
+        18.961728848723272
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 12,
+      "file_name": "tile_00011.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.83657104628016,
+        18.938731977449812,
+        72.85956791755362,
+        18.961728848723272
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 13,
+      "file_name": "tile_00012.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.85489667807619,
+        18.938731977449812,
+        72.87789354934965,
+        18.961728848723272
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 14,
+      "file_name": "tile_00013.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.87322230987223,
+        18.938731977449812,
+        72.8962191811457,
+        18.961728848723272
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 15,
+      "file_name": "tile_00014.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.89154794166826,
+        18.938731977449812,
+        72.91454481294173,
+        18.961728848723272
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 16,
+      "file_name": "tile_00015.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.90987357346431,
+        18.938731977449812,
+        72.93287044473777,
+        18.961728848723272
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 17,
+      "file_name": "tile_00016.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.92819920526034,
+        18.938731977449812,
+        72.9511960765338,
+        18.961728848723272
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 18,
+      "file_name": "tile_00017.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.94652483705639,
+        18.938731977449812,
+        72.96952170832985,
+        18.961728848723272
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 19,
+      "file_name": "tile_00018.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.79991978268808,
+        18.920406345653774,
+        72.82291665396154,
+        18.943403216927234
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 20,
+      "file_name": "tile_00019.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.81824541448411,
+        18.920406345653774,
+        72.84124228575757,
+        18.943403216927234
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 21,
+      "file_name": "tile_00020.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.83657104628016,
+        18.920406345653774,
+        72.85956791755362,
+        18.943403216927234
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 22,
+      "file_name": "tile_00021.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.85489667807619,
+        18.920406345653774,
+        72.87789354934965,
+        18.943403216927234
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 23,
+      "file_name": "tile_00022.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.87322230987223,
+        18.920406345653774,
+        72.8962191811457,
+        18.943403216927234
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 24,
+      "file_name": "tile_00023.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.89154794166826,
+        18.920406345653774,
+        72.91454481294173,
+        18.943403216927234
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 25,
+      "file_name": "tile_00024.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.90987357346431,
+        18.920406345653774,
+        72.93287044473777,
+        18.943403216927234
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 26,
+      "file_name": "tile_00025.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.92819920526034,
+        18.920406345653774,
+        72.9511960765338,
+        18.943403216927234
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 27,
+      "file_name": "tile_00026.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.79991978268808,
+        18.902080713857735,
+        72.82291665396154,
+        18.925077585131195
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 28,
+      "file_name": "tile_00027.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.81824541448411,
+        18.902080713857735,
+        72.84124228575757,
+        18.925077585131195
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 29,
+      "file_name": "tile_00028.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.83657104628016,
+        18.902080713857735,
+        72.85956791755362,
+        18.925077585131195
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 30,
+      "file_name": "tile_00029.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.85489667807619,
+        18.902080713857735,
+        72.87789354934965,
+        18.925077585131195
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 31,
+      "file_name": "tile_00030.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.87322230987223,
+        18.902080713857735,
+        72.8962191811457,
+        18.925077585131195
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 32,
+      "file_name": "tile_00031.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.89154794166826,
+        18.902080713857735,
+        72.91454481294173,
+        18.925077585131195
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 33,
+      "file_name": "tile_00032.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.90987357346431,
+        18.902080713857735,
+        72.93287044473777,
+        18.925077585131195
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 34,
+      "file_name": "tile_00033.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.92819920526034,
+        18.902080713857735,
+        72.9511960765338,
+        18.925077585131195
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 35,
+      "file_name": "tile_00034.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.79991978268808,
+        18.883755082061697,
+        72.82291665396154,
+        18.906751953335156
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 36,
+      "file_name": "tile_00035.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.81824541448411,
+        18.883755082061697,
+        72.84124228575757,
+        18.906751953335156
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 37,
+      "file_name": "tile_00036.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.83657104628016,
+        18.883755082061697,
+        72.85956791755362,
+        18.906751953335156
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 38,
+      "file_name": "tile_00037.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.85489667807619,
+        18.883755082061697,
+        72.87789354934965,
+        18.906751953335156
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 39,
+      "file_name": "tile_00038.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.87322230987223,
+        18.883755082061697,
+        72.8962191811457,
+        18.906751953335156
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 40,
+      "file_name": "tile_00039.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.89154794166826,
+        18.883755082061697,
+        72.91454481294173,
+        18.906751953335156
+      ],
+      "location": "mumbai"
+    },
+    {
+      "id": 41,
+      "file_name": "tile_00040.jpg",
+      "width": 1024,
+      "height": 1024,
+      "geospatial_bbox": [
+        72.94652483705639,
+        18.883755082061697,
+        72.96952170832985,
+        18.906751953335156
+      ],
+      "location": "mumbai"
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": 1,
+      "category_id": 1,
+      "bbox": [
+        157,
+        376,
+        10,
+        7
+      ],
+      "area": 32,
+      "iscrowd": 0,
+      "score": 0.5302696078431373,
+      "source": "heuristic_bright_object_pseudo_label",
+      "geospatial_bbox": [
+        72.80344567017825,
+        18.971453111673867,
+        72.80367024899928,
+        18.971610316848587
+      ]
+    },
+    {
+      "id": 2,
+      "image_id": 3,
+      "category_id": 1,
+      "bbox": [
+        546,
+        775,
+        6,
+        8
+      ],
+      "area": 32,
+      "iscrowd": 0,
+      "score": 0.5356617647058823,
+      "source": "heuristic_bright_object_pseudo_label",
+      "geospatial_bbox": [
+        72.8488330499084,
+        18.96246995883267,
+        72.84896779720101,
+        18.962649621889494
+      ]
+    },
+    {
+      "id": 3,
+      "image_id": 3,
+      "category_id": 1,
+      "bbox": [
+        499,
+        790,
+        26,
+        10
+      ],
+      "area": 135,
+      "iscrowd": 0,
+      "score": 0.5362962962962963,
+      "source": "heuristic_bright_object_pseudo_label",
+      "geospatial_bbox": [
+        72.84777752944954,
+        18.96208817483692,
+        72.84836143438423,
+        18.96231275365795
+      ]
+    },
+    {
+      "id": 4,
+      "image_id": 7,
+      "category_id": 1,
+      "bbox": [
+        231,
+        155,
+        56,
+        57
+      ],
+      "area": 644,
+      "iscrowd": 0,
+      "score": 0.57319449518938,
+      "source": "heuristic_bright_object_pseudo_label",
+      "geospatial_bbox": [
+        72.9150613442301,
+        18.975293409513476,
+        72.91631898562787,
+        18.976573508793347
+      ]
+    },
+    {
+      "id": 5,
+      "image_id": 10,
+      "category_id": 1,
+      "bbox": [
+        687,
+        387,
+        12,
+        9
+      ],
+      "area": 64,
+      "iscrowd": 0,
+      "score": 0.5447916666666667,
+      "source": "heuristic_bright_object_pseudo_label",
+      "geospatial_bbox": [
+        72.81534834769283,
+        18.95283552741049,
+        72.81561784227807,
+        18.953037648349415
+      ]
+    },
+    {
+      "id": 6,
+      "image_id": 12,
+      "category_id": 1,
+      "bbox": [
+        290,
+        658,
+        6,
+        6
+      ],
+      "area": 32,
+      "iscrowd": 0,
+      "score": 0.5653186274509804,
+      "source": "heuristic_bright_object_pseudo_label",
+      "geospatial_bbox": [
+        72.84308383209002,
+        18.946816815006887,
+        72.84321857938264,
+        18.946951562299507
+      ]
+    },
+    {
+      "id": 7,
+      "image_id": 17,
+      "category_id": 1,
+      "bbox": [
+        451,
+        448,
+        17,
+        6
+      ],
+      "area": 70,
+      "iscrowd": 0,
+      "score": 0.5345658263305322,
+      "source": "heuristic_bright_object_pseudo_label",
+      "geospatial_bbox": [
+        72.93832771008879,
+        18.951532970248515,
+        72.93870949408453,
+        18.951667717541135
+      ]
+    },
+    {
+      "id": 8,
+      "image_id": 23,
+      "category_id": 1,
+      "bbox": [
+        522,
+        476,
+        16,
+        9
+      ],
+      "area": 105,
+      "iscrowd": 0,
+      "score": 0.5311297852474323,
+      "source": "heuristic_bright_object_pseudo_label",
+      "geospatial_bbox": [
+        72.88494532432999,
+        18.932511144107284,
+        72.88530465044364,
+        18.93271326504621
+      ]
+    },
+    {
+      "id": 9,
+      "image_id": 27,
+      "category_id": 1,
+      "bbox": [
+        198,
+        914,
+        9,
+        17
+      ],
+      "area": 141,
+      "iscrowd": 0,
+      "score": 0.5682658879154499,
+      "source": "heuristic_bright_object_pseudo_label",
+      "geospatial_bbox": [
+        72.80436644334448,
+        18.904169296893315,
+        72.8045685642834,
+        18.904551080889064
+      ]
+    },
+    {
+      "id": 10,
+      "image_id": 28,
+      "category_id": 1,
+      "bbox": [
+        1000,
+        464,
+        12,
+        15
+      ],
+      "area": 112,
+      "iscrowd": 0,
+      "score": 0.5395658263305323,
+      "source": "heuristic_bright_object_pseudo_label",
+      "geospatial_bbox": [
+        72.84070329658711,
+        18.914320259603866,
+        72.84097279117233,
+        18.914657127835408
+      ]
+    },
+    {
+      "id": 11,
+      "image_id": 29,
+      "category_id": 1,
+      "bbox": [
+        184,
+        463,
+        12,
+        16
+      ],
+      "area": 110,
+      "iscrowd": 0,
+      "score": 0.5393226381461675,
+      "source": "heuristic_bright_object_pseudo_label",
+      "geospatial_bbox": [
+        72.84070329658711,
+        18.914320259603866,
+        72.84097279117235,
+        18.91467958571751
+      ]
+    },
+    {
+      "id": 12,
+      "image_id": 29,
+      "category_id": 1,
+      "bbox": [
+        910,
+        763,
+        8,
+        6
+      ],
+      "area": 36,
+      "iscrowd": 0,
+      "score": 0.5196078431372549,
+      "source": "heuristic_bright_object_pseudo_label",
+      "geospatial_bbox": [
+        72.85700771899388,
+        18.907807473793998,
+        72.8571873820507,
+        18.907942221086614
+      ]
+    },
+    {
+      "id": 13,
+      "image_id": 30,
+      "category_id": 1,
+      "bbox": [
+        94,
+        763,
+        8,
+        6
+      ],
+      "area": 39,
+      "iscrowd": 0,
+      "score": 0.5202614379084967,
+      "source": "heuristic_bright_object_pseudo_label",
+      "geospatial_bbox": [
+        72.85700771899387,
+        18.907807473793998,
+        72.8571873820507,
+        18.907942221086614
+      ]
+    },
+    {
+      "id": 14,
+      "image_id": 35,
+      "category_id": 1,
+      "bbox": [
+        198,
+        98,
+        9,
+        17
+      ],
+      "area": 141,
+      "iscrowd": 0,
+      "score": 0.5699346405228759,
+      "source": "heuristic_bright_object_pseudo_label",
+      "geospatial_bbox": [
+        72.80436644334448,
+        18.90416929689331,
+        72.8045685642834,
+        18.904551080889064
+      ]
+    }
+  ]
+}

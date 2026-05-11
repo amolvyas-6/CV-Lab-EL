@@ -8,8 +8,10 @@ from typing import Sequence
 
 from utils.constants import (
     DEFAULT_BLACK_THRESHOLD,
+    DEFAULT_ANNOTATE_SHIPS,
     DEFAULT_BLUR_THRESHOLD,
     DEFAULT_CLOUD_FILTER_PCT,
+    DEFAULT_DOWNLOAD_SCENE,
     DEFAULT_DRIVE_FOLDER,
     DEFAULT_LOCATION_TAG,
     DEFAULT_MASKED_PATH,
@@ -18,6 +20,10 @@ from utils.constants import (
     DEFAULT_PROJECT_ID,
     DEFAULT_SCENE_PATH,
     DEFAULT_SR_MODEL_PATH,
+    DEFAULT_SHIP_MAX_AREA_PX,
+    DEFAULT_SHIP_MIN_AREA_PX,
+    DEFAULT_SHIP_MIN_INTENSITY,
+    DEFAULT_SHIP_THRESHOLD_PERCENTILE,
     DEFAULT_SR_TILE_DIR,
     DEFAULT_STRIDE,
     DEFAULT_TARGET_DATE,
@@ -49,6 +55,12 @@ class RunConfig:
     blur_threshold: float
     run_fetch: bool
     fetch_only: bool
+    download_scene: bool
+    annotate_ships: bool
+    ship_min_area_px: int
+    ship_max_area_px: int
+    ship_min_intensity: int
+    ship_threshold_percentile: float
 
 
 def create_run_config(
@@ -71,6 +83,12 @@ def create_run_config(
     blur_threshold: float = DEFAULT_BLUR_THRESHOLD,
     run_fetch: bool = False,
     fetch_only: bool = False,
+    download_scene: bool = DEFAULT_DOWNLOAD_SCENE,
+    annotate_ships: bool = DEFAULT_ANNOTATE_SHIPS,
+    ship_min_area_px: int = DEFAULT_SHIP_MIN_AREA_PX,
+    ship_max_area_px: int = DEFAULT_SHIP_MAX_AREA_PX,
+    ship_min_intensity: int = DEFAULT_SHIP_MIN_INTENSITY,
+    ship_threshold_percentile: float = DEFAULT_SHIP_THRESHOLD_PERCENTILE,
 ) -> RunConfig:
     """Creates a validated run config for backend execution."""
     return RunConfig(
@@ -92,4 +110,10 @@ def create_run_config(
         blur_threshold=float(blur_threshold),
         run_fetch=bool(run_fetch),
         fetch_only=bool(fetch_only),
+        download_scene=bool(download_scene),
+        annotate_ships=bool(annotate_ships),
+        ship_min_area_px=int(ship_min_area_px),
+        ship_max_area_px=int(ship_max_area_px),
+        ship_min_intensity=int(ship_min_intensity),
+        ship_threshold_percentile=float(ship_threshold_percentile),
     )

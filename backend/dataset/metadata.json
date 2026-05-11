@@ -7,24 +7,52 @@
   "tile_size_px": 256,
   "stride_px": 204,
   "sr_model": "ESPCN_x4.pb",
+  "annotation_source": "heuristic_bright_object_pseudo_label",
+  "annotation_warning": "Ship annotations are pseudo-labels and should be human-verified before scientific model training.",
   "locations": [
+    {
+      "name": "kolkata",
+      "bbox": [
+        88.362,
+        22.5744,
+        88.5629,
+        22.8744
+      ],
+      "date": "2024-02-15",
+      "tile_count": 36,
+      "tile_count_sr": 36,
+      "tile_dir": "dataset/processed_tiles/kolkata_2024",
+      "sr_tile_dir": "dataset/processed_tiles/kolkata_2024_sr",
+      "candidate_count": 0,
+      "annotations_coco": "",
+      "ship_candidates_csv": "",
+      "candidate_count_sr": 0,
+      "annotations_coco_sr": "",
+      "ship_candidates_csv_sr": ""
+    },
     {
       "name": "mumbai",
       "bbox": [
-        70.8,
-        16.87,
-        70.97,
-        16.98
+        72.8,
+        18.87,
+        72.97,
+        18.98
       ],
       "date": "2024-02-15",
       "tile_count": 41,
       "tile_count_sr": 41,
       "tile_dir": "dataset/processed_tiles/mumbai_2024",
-      "sr_tile_dir": "dataset/processed_tiles/mumbai_2024_sr"
+      "sr_tile_dir": "dataset/processed_tiles/mumbai_2024_sr",
+      "candidate_count": 13,
+      "annotations_coco": "dataset/processed_tiles/mumbai_2024/annotations_coco.json",
+      "ship_candidates_csv": "dataset/processed_tiles/mumbai_2024/ship_candidates.csv",
+      "candidate_count_sr": 14,
+      "annotations_coco_sr": "dataset/processed_tiles/mumbai_2024_sr/annotations_coco.json",
+      "ship_candidates_csv_sr": "dataset/processed_tiles/mumbai_2024_sr/ship_candidates.csv"
     }
   ],
-  "total_tiles": 41,
-  "total_tiles_sr": 41,
+  "total_tiles": 77,
+  "total_tiles_sr": 77,
   "ndwi_threshold": 0.0,
   "cloud_filter_pct": 20.0
 }

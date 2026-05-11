@@ -1,5 +1,6 @@
 import type {
   ExtractResponse,
+  BatchExtractionPayload,
   ExtractionPayload,
   HealthResponse,
   JobsResponse,
@@ -43,6 +44,13 @@ export function fetchHealth(): Promise<HealthResponse> {
 
 export function startExtraction(payload: ExtractionPayload): Promise<ExtractResponse> {
   return requestJson<ExtractResponse>('/extract', {
+    method: 'POST',
+    body: JSON.stringify(payload),
+  })
+}
+
+export function startBatchExtraction(payload: BatchExtractionPayload): Promise<ExtractResponse> {
+  return requestJson<ExtractResponse>('/batch-extract', {
     method: 'POST',
     body: JSON.stringify(payload),
   })

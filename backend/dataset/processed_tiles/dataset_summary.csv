@@ -1,2 +1,3 @@
-name,date,tile_count,tile_count_sr,min_lon,min_lat,max_lon,max_lat,tile_dir,sr_tile_dir
-mumbai,2024-02-15,41,41,70.8,16.87,70.97,16.98,dataset/processed_tiles/mumbai_2024,dataset/processed_tiles/mumbai_2024_sr
+name,date,tile_count,tile_count_sr,candidate_count,candidate_count_sr,min_lon,min_lat,max_lon,max_lat,tile_dir,sr_tile_dir,annotations_coco,annotations_coco_sr
+kolkata,2024-02-15,36,36,0,0,88.362,22.5744,88.5629,22.8744,dataset/processed_tiles/kolkata_2024,dataset/processed_tiles/kolkata_2024_sr,,
+mumbai,2024-02-15,41,41,13,14,72.8,18.87,72.97,18.98,dataset/processed_tiles/mumbai_2024,dataset/processed_tiles/mumbai_2024_sr,dataset/processed_tiles/mumbai_2024/annotations_coco.json,dataset/processed_tiles/mumbai_2024_sr/annotations_coco.json

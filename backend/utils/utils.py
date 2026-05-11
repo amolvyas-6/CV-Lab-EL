@@ -62,7 +62,8 @@ def to_uint8(arr: np.ndarray) -> np.ndarray:
     if arr.dtype == np.uint8:
         return arr
     if arr.dtype == np.uint16:
-        return (arr / 256).astype(np.uint8)
+        arr_f = np.clip(arr.astype(np.float32), 0, 3000)
+        return ((arr_f / 3000.0) * 255.0).astype(np.uint8)
 
     arr_f = np.nan_to_num(arr.astype(np.float32), nan=0.0, posinf=255.0, neginf=0.0)
     arr_f = np.clip(arr_f, 0, 255)
