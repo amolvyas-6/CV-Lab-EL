@@ -1,1 +1,1 @@
-intial readme file
+initial readme file
